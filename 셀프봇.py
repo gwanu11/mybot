@@ -1,4 +1,5 @@
 import discord
+import os
 from config import *
 from discord.ext import commands
 import asyncio, datetime
@@ -13,7 +14,7 @@ import datetime
 intents = discord.Intents.all()
 command_prefix = 접두사
 bot = commands.Bot(self_bot=True, command_prefix=command_prefix,intents=intents)
-token = 사람토큰
+token = NzU5NzM1MjE5NzY2Mjk2NTg2.G6dCP0.gDN8PouwVJJ7z8B47dTiZNy2YV3AmUIh8WLpG8
 
 def pick(lenn):
     alpha = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -1213,4 +1214,5 @@ async def 구글링(ctx, *, name):
     browser.quit()
     await ctx.reply(file=discord.File("./website.png"))
 
-bot.run('NzU5NzM1MjE5NzY2Mjk2NTg2.G6dCP0.gDN8PouwVJJ7z8B47dTiZNy2YV3AmUIh8WLpG8', bot=False)
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token, bot=False)
