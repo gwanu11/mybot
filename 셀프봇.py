@@ -14,7 +14,7 @@ import datetime
 intents = discord.Intents.all()
 command_prefix = 접두사
 bot = commands.Bot(self_bot=True, command_prefix=command_prefix,intents=intents)
-token = NzU5NzM1MjE5NzY2Mjk2NTg2.G6dCP0.gDN8PouwVJJ7z8B47dTiZNy2YV3AmUIh8WLpG8
+token = BOT_TOKEN
 
 def pick(lenn):
     alpha = "abcdefghijklmnopqrstuvwxyz0123456789"
